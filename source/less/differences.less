@@ -29,6 +29,39 @@ li.differences__item {
   margin-bottom: 35px;
 }
 
+@media (min-width: @tablet-width) {
+  .differences {
+    order: 2;
+    margin-right: 0;
+    padding-bottom: 70px;
+  }
+
+  .differences__list {
+    list-style: none;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  li.differences__item {
+    color: #ffffff;
+    font-size: 44px;
+    text-align: center;
+    padding-bottom: 67px;
+
+    p {
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  .differences__awards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .differences {
     order: inherit;
