@@ -8,16 +8,15 @@
 .modal-login {
   display: none;
   top: 30px;
-  width: 550px;
-  height: 800px;
-  margin-left: 123px;
+  width: 320px;
+  height: 600px;
   z-index: 10;
 
   h2 {
-    text-align: left;
-    padding-left: 50px;
+    text-align: center;
+    padding-top: 10px;
     text-transform: uppercase;
-    font-size: 34px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 45px;
   }
@@ -109,9 +108,8 @@
 
 .text-letter h3 {
   height: 25px;
-  font-size: 25px;
+  font-size: 21px;
   font-weight: 400;
-  margin-right: 150px;
 }
 
 input[type="tel"] {
@@ -123,7 +121,7 @@ input[type="tel"] {
 input#name-field,
 input#name-tel {
   color: #000000;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
 }
 
@@ -132,9 +130,8 @@ input#name-tel {
   border: 2px solid #d7dcde;
   margin-top: 6px;
   margin-bottom: 16px;
-  padding-left: 12px;
-  width: 485px;
-  height: 85px;
+  width: 300px;
+  height: 50px;
   box-shadow: inset 1px 3px 7px rgba(0, 0, 0, 0.35);
   background-color: #ffffff;
 }
@@ -150,14 +147,170 @@ input#name-tel {
 }
 
 .button-plus {
-  width: 360px;
-  min-height: 100px;
+  width: 320px;
+  min-height: 60px;
   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.46);
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
   background-color: #ffcc00;
   margin-bottom: 100px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    position: fixed;
+    background-image: url("../img/fon_form.png");
+    background-size: cover;
+    box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  }
+
+  .modal-login {
+    display: none;
+    top: 0;
+    width: 691px;
+    height: 800px;
+    margin-left: 5%;
+    z-index: 10;
+
+    h2 {
+      text-align: left;
+      padding-left: 50px;
+      text-transform: uppercase;
+      font-size: 34px;
+      font-weight: 400;
+      line-height: 45px;
+    }
+
+    span {
+      color: #ffcb00;
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+
+    70% {
+      transform: translateY(30px);
+    }
+
+    90% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+  }
+
+  .modal-show {
+    display: block;
+    animation: bounce 0.6s;
+  }
+
+  .modal-error {
+    animation: shake 0.6s;
+  }
+
+  .modal-close {
+    opacity: 0.3;
+  }
+
+  .modal-close:hover,
+  .modal-close:focus {
+    opacity: 1;
+  }
+
+  .modal-close:active {
+    opacity: 0.1;
+  }
+
+  .modal-close svg {
+    position: absolute;
+    top: 12px;
+    right: 22px;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+    color: #d7373b;
+  }
+
+  .text-box {
+    margin: 0;
+    margin-bottom: 11px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
+  input[type="tel"] {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  input#name-field {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .login-form input[type="text"],
+  .login-form input[type="tel"] {
+    border: 2px solid #d7dcde;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    padding-left: 12px;
+    width: 485px;
+    height: 85px;
+    box-shadow: inset 1px 3px 7px rgba(0, 0, 0, 0.35);
+    background-color: #ffffff;
+  }
+
+  .text-letter-box:focus,
+  .login-form input:focus {
+    border-color: #000000;
+  }
+
+  .text-letter-box:hover,
+  .login-form input:hover {
+    border-color: #b4b9bb;
+  }
+
+  .button-plus {
+    width: 360px;
+    min-height: 100px;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.46);
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #ffcc00;
+    margin-bottom: 100px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -173,7 +326,7 @@ input#name-tel {
     top: 0;
     width: 691px;
     height: 800px;
-    margin-left: 25%;
+    margin-left: 20%;
     z-index: 10;
 
     h2 {

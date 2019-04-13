@@ -1,4 +1,5 @@
 .comment {
+  width: 320px;
   position: relative;
   padding-top: 40px;
   order: 3;
@@ -7,14 +8,14 @@
 .comment__pictures img {
   position: absolute;
   top: -60px;
-  left: 240px;
-  width: 398px;
-  height: 60px;
+  left: 7px;
+  width: 320px;
+  height: 45px;
 }
 
 .comment__header {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 400;
   text-transform: uppercase;
   color: #ffcb00;
@@ -22,7 +23,7 @@
 }
 
 .comment__discription {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
@@ -35,8 +36,8 @@
   font-weight: 400;
   text-transform: uppercase;
   border: 5px solid #ffcc00;
-  width: 563px;
-  min-height: 100px;
+  width: 320px;
+  min-height: 60px;
   box-shadow: inset 0 0 5px #b79305f5;
   background-color: inherit;
   margin-bottom: 100px;
@@ -44,7 +45,7 @@
 
 .comment__pay {
   text-align: center;
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 400;
   text-transform: uppercase;
 
@@ -56,35 +57,37 @@
 .comment__list {
   position: relative;
   list-style: none;
-  font-size: 44px;
+  font-size: 24px;
   font-weight: 400;
 }
 
 .comment__item {
   padding-bottom: 50px;
   text-align: center;
+  margin-left: -50px;
 }
 
 .comment__item--men img {
-  position: absolute;
+  position: inherit;
   top: -25px;
   left: -50px;
 }
 
 .comment__item--pay img {
-  position: absolute;
+  position: inherit;
   top: 105px;
   left: 100px;
 }
 
 .comment__item--plane img {
-  position: absolute;
+  position: inherit;
   top: 200px;
   left: 115px;
 }
 
 @media (min-width: @tablet-width) {
   .comment {
+    width: 500px;
     position: relative;
     padding-top: 40px;
     order: 3;
@@ -93,7 +96,7 @@
   .comment__pictures img {
     position: absolute;
     top: -60px;
-    left: 240px;
+    left: 55px;
     width: 398px;
     height: 60px;
   }
@@ -121,7 +124,7 @@
     font-weight: 400;
     text-transform: uppercase;
     border: 5px solid #ffcc00;
-    width: 563px;
+    width: 500px;
     min-height: 100px;
     box-shadow: inset 0 0 5px #b79305f5;
     background-color: inherit;
@@ -149,6 +152,7 @@
   .comment__item {
     padding-bottom: 50px;
     text-align: center;
+    margin-left: 0;
   }
 
   .comment__item--men img {
@@ -159,19 +163,20 @@
 
   .comment__item--pay img {
     position: absolute;
-    top: 105px;
-    left: 100px;
+    top: 179px;
+    left: 0;
   }
 
   .comment__item--plane img {
     position: absolute;
-    top: 200px;
-    left: 115px;
+    top: 311px;
+    left: -50px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .comment {
+    width: auto;
     position: relative;
     padding-top: 40px;
     order: inherit;
